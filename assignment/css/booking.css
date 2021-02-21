@@ -1,0 +1,235 @@
+
+
+#booking{
+    width:100%;
+    height:auto;
+    background:url("../images/2.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    animation: animatedBackground 30s infinite;
+    padding-bottom:5%;
+
+  }
+
+
+
+.inputForm{
+  color:#ffffff;
+  padding-top:5%;
+}
+
+#complete{
+  margin-bottom:5%;
+}
+
+
+.confirm, .confirm a, #complete, #complete a{
+  background:#8167e6;
+  padding:5px;
+  color:#ffffff;
+  border:0;
+  margin:0 auto;
+}
+
+.confirm, #complete, .confirm:focus, #complete:focus{
+  border-radius:20px;
+  margin:auto!important;
+  outline: none;
+}
+
+.book{
+  color:#ffffff;
+  font-size:1.7em;
+  font-weight:600;
+  text-align:center;
+  border:none;
+  resize: none;
+  display:inline;
+  float:left;
+}
+
+
+#Username
+{
+  border:none;
+  border-bottom:1px solid;
+}
+
+.book-intro{
+
+  text-align:center;
+  font-size:1.7em;
+  margin: 1% 0;
+}
+
+.seat-structure {
+    background: #eee;
+    padding: 0 2% 4% 2%;
+    margin: -3% auto 0 auto;
+    width: 302px;
+    top:7vh;
+}
+
+.rocket-nose{
+  background:url("../images/nose.png");
+  height:180px;
+  background-position:top;
+  background-repeat: no-repeat;
+  width:302px;
+  margin:0 auto;
+  top:24vh;
+
+}
+
+.displayerBoxes{
+  padding: 0 4% 5% 0;
+
+}
+
+
+.seating{
+  width:700px;
+  margin:0 auto 0 auto;
+  border-radius:15px;
+  height:auto;
+  background
+  padding:0;
+  background:url("../images/wings.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height:auto;
+}
+
+
+
+
+
+.screen
+{
+  width:100%;
+  height:20px;
+  background:#4388cc;
+  color:#fff;
+  line-height:20px;
+  font-size:15px;
+}
+
+.smallBox::before
+{
+  content:".";
+  width:15px;
+  height:15px;
+  float:left;
+  margin-right:10px;
+}
+.greenBox::before
+{
+  content:"";
+  background:Green;
+}
+.redBox::before
+{
+  content:"";
+  background:Red;
+}
+.emptyBox::before
+{
+  content="";
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+.seats
+{
+  border:1px solid red;background:yellow;
+}
+
+
+
+.seatGap
+{
+  width:40px;
+}
+
+.seatVGap
+{
+  height:40px;
+}
+
+table, tr
+{
+  text-align:center;
+   padding:5%;
+  border:0;
+}
+
+
+.Displaytable
+{
+  text-align:center;
+}
+.Displaytable td, .Displaytable th {
+    border: 1px solid;
+    text-align: left;
+}
+
+.confirmation {
+  width:400px;
+  margin:auto;
+}
+
+
+#Numseats{
+  width:150px;
+  margin:auto;
+  text-align:center;
+  outline: none;
+
+}
+
+
+
+input[type=checkbox] {
+    width:0px;
+    margin-right:18px;
+}
+
+
+
+input[type=checkbox]:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
+
+input[type=checkbox].disabled:before{
+  background-color: red !important;
+  font-size: 15px;
+}
+
+
+
+/*@keyframes animatedStars {
+	from { background-position: bottom; }
+	to { background-position: top; }
+}*/
+
+@keyframes animatedStars {
+  from { transform : translateY(0) }
+  17%  { transform : translateY(0%) }
+
+  97%  { transform : translateY(100%) }
+  to   { transform : translateY(0%) }
+
+}

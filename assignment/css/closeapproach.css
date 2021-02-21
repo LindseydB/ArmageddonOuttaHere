@@ -1,0 +1,229 @@
+
+ #space{
+  position:absolute;
+   height:100%; width:100%;
+}
+
+
+#closeapproach{
+
+    width:100%;
+    height:70vh;
+    background:url("../images/2.jpg");
+    background-attachment:fixed;
+    background-position: top;
+
+}
+
+.asteroid-detail{
+ }
+
+.timeline {
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.timeline ol {
+  width: 100%;
+  transition: all 1s;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+}
+
+.timeline ol li {
+  list-style:none;
+  position: relative;
+  text-align:center;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 50px 15px 50px;
+  width:300px;
+  display:inline-table;
+
+}
+
+.timeline li:hover{
+  background:#ffffff;
+  border-radius: 15px;
+  box-shadow : 0 0 38px #cccccc;
+
+}
+
+.timeline ol li:before {
+  font-family: "Font Awesome 5 Pro";
+  content:"\f753";
+  width:15px;
+  height:15px;
+  display:block;
+  border-radius:50%;
+  background: #ffffff;
+  margin:0 auto 15px auto;
+  color:#8167e6;
+
+}
+.timeline ol li:not(:last-child)::after {
+    content: "";
+    width: calc(100% - 14px);
+    height: 1px;
+    display: block;
+    background: #ccc;
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    left: calc(50% + 7px);
+}
+
+.book-btn{
+  background:#8167e6;
+  border-radius:50px;
+  padding:1% 4% 2% 4%;
+  margin:25px 0 20px 0;
+
+
+}
+
+.book-btn a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size:.9em;
+}
+
+.book-btn-emergency{
+  background:red;
+  border-radius:50px;
+  padding:1% 4% 2% 4%;
+  margin:25px 0 20px 0;
+
+
+}
+
+.book-btn-emergency a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size:.9em;
+}
+
+
+#earth {
+    background:url("../images/earth-bg.png");
+    animation: animatedBackground 40s linear infinite;
+    background-size: 250%;
+    border-radius : 200px;
+    box-shadow : 0 0 128px #7c6cde;
+    margin-top : -200px;
+    margin-left : -100px;
+    left : 50%;
+    position : absolute;
+    top : 50%;
+    width : 200px;
+    height : 200px;
+    opacity:.9;
+
+}
+#moon-orbit {
+    border: 2px solid #313584;
+    border-radius: 50%;
+    left: 50%;
+    height: 400px;
+    margin-top: -300px;
+    margin-left: -200px;
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+}
+
+#moon {
+    background:url("../images/moon.png");
+    background-size: 100%;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 50px;
+    left : 50%;
+    position : absolute;
+    top : 0%;
+    width : 50px;
+    box-shadow : 0 0 128px #7c6cde;
+
+}
+
+#moon {
+    background:url("../images/moon.png");
+    background-size: 100%;
+    border-radius : 50px;
+    margin-left : -25px;
+    margin-top : -25px;
+    height : 50px;
+    left : 50%;
+    position : absolute;
+    top : 0%;
+    width : 50px;
+}
+
+  #asteroid {
+    background:url("../images/asteroid.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius : 200px;
+    margin-top : -400px;
+    margin-left : -25px;
+    left : 50%;
+    position : absolute;
+    top : 0;
+    width : 30px;
+    height : 100vh;
+    display:none;
+    animation: movingTopToBottom 8s linear infinite;
+
+}
+
+.container-asteroid {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spin-right {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+
+@keyframes movingTopToBottom {
+  0% {
+    top: -15px;
+  }
+  70% {
+    top: 450px;
+    opacity:1;
+  }
+  100% {
+    top: 550px;
+    opacity:0;
+  }
+}
