@@ -3,5 +3,4 @@ A website I built for tracking close approaches to Earth - it uses NASA's SBDB C
 
 You can login with these creds:
 
-User
-Password!@#
+Username: User   |    Password: Password!@#
